@@ -1,4 +1,4 @@
-package me.repayed.clgames.ui.main_messages;
+package me.repayed.clgames.ui;
 
 public class MainMessages {
 

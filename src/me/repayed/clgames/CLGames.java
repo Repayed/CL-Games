@@ -1,19 +1,19 @@
 package me.repayed.clgames;
 
 import me.repayed.clgames.games.Game;
-import me.repayed.clgames.ui.main_messages.MainMessages;
+import me.repayed.clgames.ui.MainMessages;
 
 public class CLGames {
     public static void main(String[] args) {
         MainMessages.printMainMenuMesage();
-        waitMessage();
+        sleepThread();
         MainMessages.printAvailableGames();
-        waitMessage();
+        sleepThread();
         MainMessages.printPickGameMessage();
         Game.pickGame();
     }
 
-    private static void waitMessage(int seconds) {
+    public static void sleepThread(int seconds) {
         try {
             Thread.sleep(1000 * seconds);
         } catch (InterruptedException e) {
@@ -21,8 +21,8 @@ public class CLGames {
         }
     }
 
-    private static void waitMessage() {
-        waitMessage(5);
+    public static void sleepThread() {
+        sleepThread(5);
     }
 
 }
