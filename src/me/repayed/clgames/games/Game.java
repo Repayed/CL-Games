@@ -1,7 +1,6 @@
 package me.repayed.clgames.games;
 
-import me.repayed.clgames.games.types.Coinflip;
-import me.repayed.clgames.games.types.HeadsOrTails;
+import me.repayed.clgames.games.types.coinflip.CoinFlip;
 import me.repayed.clgames.games.types.TicTacToe;
 
 import java.util.Scanner;
@@ -22,13 +21,10 @@ public class Game {
 
         switch(input) {
             case 1:
-                new HeadsOrTails().execute();
+                new CoinFlip().execute();
                 break;
             case 2:
                 new TicTacToe().execute();
-                break;
-            case 3:
-                new Coinflip().execute();
                 break;
             default:
                 System.out.println("The game which ou picked is not on the available games list.");

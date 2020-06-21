@@ -1,11 +1,11 @@
-package me.repayed.clgames.games.types;
+package me.repayed.clgames.games.types.coinflip;
 
 import me.repayed.clgames.CLGames;
 import me.repayed.clgames.games.IGame;
 
 import java.util.Scanner;
 
-public class HeadsOrTails implements IGame {
+public class CoinFlip implements IGame {
 
     @Override
     public void execute() {
@@ -33,14 +33,16 @@ public class HeadsOrTails implements IGame {
 
     }
 
+    /**
+     * A method which returns a random value from the CoinSides enum array,
+     * it is done by using the enum's .values() method, and due to it returning
+     * an array, you're able to get a value using [num]. Since I was
+     * attempting to get a random value, I used the Math.random method
+     * with the length of the enum's array, and then returned the value.
+     *
+     */
+    
     private String getTossedCoinResult() {
-        int numBetweenZeroToHundred = (int) (Math.random() * 100) + 1;
-        System.out.println(numBetweenZeroToHundred);
-
-        if(numBetweenZeroToHundred <= 49) {
-            return "heads";
-        } else {
-            return "tails";
-        }
+        return CoinSides.values()[(int) (Math.random() * CoinSides.values().length)].toString();
     }
 }
