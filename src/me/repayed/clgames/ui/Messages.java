@@ -1,6 +1,6 @@
 package me.repayed.clgames.ui;
 
-public class MainMessages {
+public class Messages {
 
     public static void printMainMenuMesage() {
         System.out.println("Welcome to CL-Games. A list of simple");
@@ -11,9 +11,9 @@ public class MainMessages {
 
     public static void printAvailableGames() {
         System.out.println("List of games -> ");
-        System.out.println("- Heads Or Tails (Num. 1)");
+        System.out.println("- Heads or Tails (Num. 1)");
         System.out.println("- Tic Tac Toe (Num. 2)");
-        System.out.println("- Coinflip (Num. 3)");
+        System.out.println("- Rock Paper Scissors (Num. 3)");
         System.out.println();
     }
 

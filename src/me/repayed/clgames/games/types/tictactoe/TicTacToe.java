@@ -1,4 +1,4 @@
-package me.repayed.clgames.games.types;
+package me.repayed.clgames.games.types.tictactoe;
 
 import me.repayed.clgames.games.IGame;
 

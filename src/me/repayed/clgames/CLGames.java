@@ -1,15 +1,15 @@
 package me.repayed.clgames;
 
 import me.repayed.clgames.games.Game;
-import me.repayed.clgames.ui.MainMessages;
+import me.repayed.clgames.ui.Messages;
 
 public class CLGames {
     public static void main(String[] args) {
-        MainMessages.printMainMenuMesage();
+        Messages.printMainMenuMesage();
         sleepThread();
-        MainMessages.printAvailableGames();
+        Messages.printAvailableGames();
         sleepThread();
-        MainMessages.printPickGameMessage();
+        Messages.printPickGameMessage();
         Game.pickGame();
     }
 
